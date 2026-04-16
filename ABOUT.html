@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Universe - Nuestra Historia</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- FUENTES -->
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Press+Start+2P&family=Jersey+25&display=swap" rel="stylesheet">
+
+    <style>
+        body{
+            font-family: "Pixelify Sans", sans-serif;
+            margin: 0;
+            color: #e8eef7;
+        }
+
+        /* 🌫️ FONDO INDIE */
+        body::before{
+            content: "";
+            position: fixed;
+            inset: 0;
+            background: url("https://i.imgur.com/n4diWht.jpeg") no-repeat center center;
+            background-size: cover;
+            filter: blur(6px) brightness(0.55) saturate(0.9);
+            transform: scale(1.08);
+            z-index: -2;
+        }
+
+        body::after{
+            content: "";
+            position: fixed;
+            inset: 0;
+            background: rgba(10, 15, 25, 0.55);
+            z-index: -1;
+        }
+
+        .press-start{
+            font-family: "Press Start 2P", system-ui;
+        }
+
+        /* TEXTO */
+        p{
+            font-family: "Jersey 25", sans-serif;
+            font-size: 1.2rem;
+            color: #d7e3f4;
+            letter-spacing: 0.3px;
+        }
+
+        .navbar .nav-link,
+        .navbar-brand{
+            font-family: "Jersey 25", sans-serif;
+            font-size: 1.1rem;
+        }
+
+        h1, h2, h3 {
+            color: #dbe7ff;
+        }
+
+        /* PIXEL COLORS */
+        .pu-p { color: #a78bfa; }
+        .pu-i { color: #60a5fa; }
+        .pu-x { color: #fb7185; }
+        .pu-e { color: #fbbf24; }
+
+        .pu-p, .pu-i, .pu-x, .pu-e {
+            text-shadow: 0 1px 0 rgba(0,0,0,0.3);
+        }
+
+        /* NAVBAR */
+        .navbar{
+            background-color: rgba(15, 20, 35, 0.75) !important;
+            border-bottom: 1px solid rgba(120, 140, 180, 0.4);
+            backdrop-filter: blur(6px);
+        }
+
+        .navbar .nav-link,
+        .navbar-brand{
+            color: #e8eef7 !important;
+        }
+
+        .navbar .nav-link:hover{
+            color: #ffffff !important;
+        }
+
+        /* SECCIONES */
+        .section-box{
+            background-color: rgba(15, 20, 35, 0.65);
+            border: 1px solid rgba(120, 140, 180, 0.35);
+            border-radius: 12px;
+            padding: 18px;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        /* LOGO */
+        .logo-img{
+            width: 85px;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER (SOLO LOGO + TEXTO MULTICOLOR) -->
+    <h1 class="press-start text-center mt-3">
+        <img src="https://i.imgur.com/P5HV1Ee.jpeg" class="logo-img">
+
+        <span class="pu-p">P</span><span class="pu-i">I</span><span class="pu-x">X</span><span class="pu-e">E</span><span class="pu-i">L</span>
+        <span> </span>
+        <span class="pu-p">U</span><span class="pu-i">N</span><span class="pu-x">I</span><span class="pu-e">V</span><span class="pu-p">E</span><span class="pu-i">R</span><span class="pu-x">S</span><span class="pu-e">E</span>
+    </h1>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+
+          <a class="navbar-brand" href="#">Pixel Universe</a>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+
+              <li class="nav-item">
+                <a class="nav-link active" href="index.html">Inicio</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="ABOUT.html">Sobre Nosotros</a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                  Redes Sociales
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="https://www.instagram.com/">Instagram</a></li>
+                  <li><a class="dropdown-item" href="https://www.tiktok.com/">TikTok</a></li>
+                </ul>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+    <br>
+
+    <!-- CONTENIDO (INTACTO) -->
+
+    <div class="section-box">
+        <h2 class="press-start text-center">NUESTRA HISTORIA:</h2>
+        <p>
+Un día estábamos nosotros 5 reunidos y estábamos platicando de la idea para nuestro negocio. Pensamos en hacer un videojuego móvil, aunque otros también querían cartas, pero al momento de pensar la temática, todo era un caos: uno exigía dragones, otro robots futuristas y otro taqueros radioactivos. Teníamos tantas ideas que estábamos estresados y discutiendo, hasta que vimos que lo que teníamos era un Big Bang Creativo. ¿Por qué limitarnos a un solo mundo, si podemos construir un Pixel Universe? 
+Este nombre no es solo nuestra marca, es nuestro modelo de negocio de juego móvil y cartas físicas, diseñado para albergar infinitas realidades y crecer... infinitamente.
+        </p>
+    </div>
+
+    <br>
+
+    <div class="section-box">
+        <h2 class="press-start text-center">MISIÓN:</h2>
+        <p>
+Nuestra misión es hacer que las personas vuelvan a sentir amor y diversión por los juegos de cartas y por el arte Pixel Art, por medio de un videojuego móvil con un mundo interesante, llamativo y hermoso, haciéndolo completamente accesible para la mayoría de personas. Buscamos crear experiencias únicas e inolvidables por medio de la sorpresa que genera un diseño de un mundo digital que puedes tener en la palma de tu mano.
+        </p>
+    </div>
+
+    <br>
+
+    <div class="section-box">
+        <h2 class="press-start text-center">VISIÓN:</h2>
+        <p>
+Nuestra visión es ser una empresa importante de manera nacional en cuanto a la creación de videojuegos por medio de la constante expansión del multiverso de nuestro juego, haciendo uso de la creación de nuevos personajes con hermosos diseños pixel art dentro de nuestro videojuego y de las cartas.
+        </p>
+    </div>
+
+    <br>
+
+    <div class="section-box">
+        <h2 class="press-start text-center">VALORES:</h2>
+        <p>
+Creatividad - Este valor es aplicado en la creación del videojuego, desde la historia, los mundos, el diseño de los personajes, hasta lo que es la música.
+
+Trabajo Colaborativo - Valor indispensable debido a que es importante en el proceso de creación y lluvia de ideas para el constante desarrollo del videojuego.
+
+Pasión - Valor de nuestra empresa que nos hace darle amor, dedicación y empeño a la creación del videojuego, desde los diseños pixel art hasta las cartas mismas.
+
+Calidad - Hacer un videojuego donde se note la calidad, que muestre nuestra dedicatoria al proyecto, no dejándonos llevar por la cantidad de dinero generado.
+
+Integridad - Ser totalmente honestos con lo que prometemos y ofrecemos, como con la creación única de los diseños de los personajes del videojuego y las cartas.
+        </p>
+    </div>
+
+    <br><br>
+
+</body>
+</html>
